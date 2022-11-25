@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32407.337
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstProject", "MyFirstProject\MyFirstProject.csproj", "{C9E452CD-EBC7-40D9-805D-C9646B74EE05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstProject", "MyFirstProject\MyFirstProject.csproj", "{C9E452CD-EBC7-40D9-805D-C9646B74EE05}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceAppliaction", "InvoiceAppliaction\InvoiceAppliaction.csproj", "{EB4F60EB-2436-4794-B706-650FF2CD3117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqIntroduction", "LinqIntroduction\LinqIntroduction.csproj", "{D4133433-7AD2-46F8-BCA7-9C6D4E39FB91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C9E452CD-EBC7-40D9-805D-C9646B74EE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9E452CD-EBC7-40D9-805D-C9646B74EE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9E452CD-EBC7-40D9-805D-C9646B74EE05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB4F60EB-2436-4794-B706-650FF2CD3117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB4F60EB-2436-4794-B706-650FF2CD3117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB4F60EB-2436-4794-B706-650FF2CD3117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB4F60EB-2436-4794-B706-650FF2CD3117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4133433-7AD2-46F8-BCA7-9C6D4E39FB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4133433-7AD2-46F8-BCA7-9C6D4E39FB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4133433-7AD2-46F8-BCA7-9C6D4E39FB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4133433-7AD2-46F8-BCA7-9C6D4E39FB91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
