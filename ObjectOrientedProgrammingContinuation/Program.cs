@@ -11,67 +11,20 @@
 
 //above - some example for technical aspects of inheritance
 
-public interface IInvoiceLinesProvider
-{
-    string[] GetLines();
-}
-
-public class FileLinesProvider : IInvoiceLinesProvider
-{
-    public string[] GetLines() => 
-        File.ReadAllLines("C:\\Users\\Marcin\\Desktop\\Invoices.txt").Skip(1).ToArray();
-}
-
-public class MockLinesProvider : IInvoiceLinesProvider
-{
-    public string[] GetLines() =>
-        new string[]
-        {
-            "Bread;Food;100;2022-11-25",
-            "Trousers;Clothing;300.50;2022-10-1",
-            "Beer;Food;250;2022-11-24"
-        };
-}
-
-public class InvoiceProcessor
-{
-    private readonly IInvoiceLinesProvider _invoiceLinesProvider;
-
-    public InvoiceProcessor(IInvoiceLinesProvider invoiceLinesProvider) => 
-        _invoiceLinesProvider = invoiceLinesProvider;
-
-    public Dictionary<string, decimal> GroupByCategory()
-    {
-        var lines = _invoiceLinesProvider.GetLines();
-
-        var dictionary = new Dictionary<string, decimal>();
-
-        for (var i = 1; i < lines.Length; i++)
-        {
-            var line = lines[i];
-            var split = line.Split(";");
-
-            var category = split[1];
-            var amount = Convert.ToDecimal(split[2].Replace(".", ","));
-
-            if (dictionary.ContainsKey(category))
-            {
-                dictionary[category] += amount;
-            }
-            else
-            {
-                dictionary[category] = amount;
-            }
-        }
-
-        return dictionary;
-    }
-}
-
-
 public class Program
 {
     public static void Main(string[] args)
+    {
+        var c1 = new Car("Ford Mondeo");
+        var c2 = new Car("Opel Astra");
+        var c3 = new Car("Mercedes E200");
+        var c4 = new Car("Tesla");
+
+        //Car.CarsCreated = 100; // no longer possible
+        Console.WriteLine(Car.CarsCreated);
+    }
+
+    public static void InterfacesDemo()
     {
         var x = new ElectricalCar();
         x.Drive();
